@@ -1,0 +1,251 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "楽しいねマルバツゲーム",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "gameContinueIntent",
+                    "slots": [
+                        {
+                            "name": "posFromName",
+                            "type": "stonePos"
+                        }
+                    ],
+                    "samples": [
+                        "{posFromName} へ",
+                        "{posFromName} に",
+                        "{posFromName} に置きます",
+                        "{posFromName} に置く",
+                        "{posFromName}"
+                    ]
+                },
+                {
+                    "name": "showBoardIntent",
+                    "slots": [
+                        {
+                            "name": "boardStatusStr",
+                            "type": "boardStatus"
+                        }
+                    ],
+                    "samples": [
+                        "{boardStatusStr}",
+                        "{boardStatusStr} を見せて",
+                        "{boardStatusStr} が見たい",
+                        "{boardStatusStr} を確認",
+                        "{boardStatusStr} を表示"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "勝負しません",
+                        "しません",
+                        "また今度",
+                        "終わりにします"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "イエス",
+                        "はい"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "stonePos",
+                    "values": [
+                        {
+                            "id": "9",
+                            "name": {
+                                "value": "右下",
+                                "synonyms": [
+                                    "下の右",
+                                    "右の下",
+                                    "右の一番下",
+                                    "みぎした"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8",
+                            "name": {
+                                "value": "下",
+                                "synonyms": [
+                                    "下の段の真ん中",
+                                    "底",
+                                    "ボトム",
+                                    "アンダー",
+                                    "した"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "7",
+                            "name": {
+                                "value": "左下",
+                                "synonyms": [
+                                    "下の左",
+                                    "下の段の左",
+                                    "左の下",
+                                    "ひだりした"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "name": {
+                                "value": "右",
+                                "synonyms": [
+                                    "真ん中の段の右",
+                                    "右の真ん中",
+                                    "ライト",
+                                    "みぎ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "name": {
+                                "value": "真ん中",
+                                "synonyms": [
+                                    "中の段の中",
+                                    "センター",
+                                    "どまんなか",
+                                    "まんなか"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "左",
+                                "synonyms": [
+                                    "真ん中の左",
+                                    "真ん中の段の左",
+                                    "左の真ん中",
+                                    "レフト",
+                                    "ひだり"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "右上",
+                                "synonyms": [
+                                    "上の右",
+                                    "上の段の右",
+                                    "右の一番上",
+                                    "右の上"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "上",
+                                "synonyms": [
+                                    "上の段の真ん中",
+                                    "てっぺん",
+                                    "頂点",
+                                    "トップ",
+                                    "12時",
+                                    "うえ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "左上",
+                                "synonyms": [
+                                    "上の左",
+                                    "上の段の左",
+                                    "左の上"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "boardStatus",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "盤面",
+                                "synonyms": [
+                                    "現状",
+                                    "状態",
+                                    "ばんめん",
+                                    "ボード",
+                                    "石の状態",
+                                    "盤面の状態",
+                                    "盤面",
+                                    "状況"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
